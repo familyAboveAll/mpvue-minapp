@@ -24,6 +24,16 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  var sassResourceLoader = {
+    loader: 'sass-resources-loader',
+    options: {
+      resources: [
+      //修改相应路径
+        path.resolve(__dirname, '../src/styles/index.scss'),
+      ]
+    }
+  }
+
   var postcssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -69,8 +79,8 @@ exports.cssLoaders = function (options) {
     wxss: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
-    sass: generateLoaders('sass', { indentedSyntax: true }),
-    scss: generateLoaders('sass'),
+    sass: generateLoaders('sass', { indentedSyntax: true },sassResourceLoader),
+    scss: generateLoaders('sass',{},sassResourceLoader),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
