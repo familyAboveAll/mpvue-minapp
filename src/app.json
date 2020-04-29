@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "mpvue-demo",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "../static/vant/button/index",
+    "van-dialog": "../static/vant/dialog/index",
+    "van-icon": "../static/vant/icon/index",
+    "van-panel": "../static/vant/panel/index",
+    "van-tag": "../static/vant/tag/index",
+    "van-cell": "../static/vant/cell/index",
+    "van-toast": "../static/vant/toast/index"
+  }
+}
