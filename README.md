@@ -1,4 +1,4 @@
-# mpvue_demo
+# mpvue-minapp
 
 > A Mpvue project
 
@@ -6,8 +6,8 @@
 
 ``` bash
 # 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
+git clone git@github.com:familyAboveAll/mpvue-minapp.git
+cd mpvue-minapp
 
 # 安装依赖
 yarn
@@ -35,3 +35,18 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# mpvue-entry
+> 在使用mpvue的时候每个页面都需要配置main.js，繁琐又多余，所以这里使用了mpvue-entry解决这个问题
+
+# http请求
+> 使用flyio进行数据交互 [flyio](https://wendux.github.io/dist/#/doc/flyio/readme)
+
+
+
+
+
+
+
+
+
